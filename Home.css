@@ -39,11 +39,11 @@ nav
 
 .nama-sekolah
 {
-  transform: translatey(25px);
+  margin-top:20px;
   font-weight: 900;
-  font-family: "Boldonse", system-ui;
+  font-style: "Boldonse", system-ui;
   font-weight: 400;
-  font-style: normal;
+
   font-size: 15px:
 }
 
