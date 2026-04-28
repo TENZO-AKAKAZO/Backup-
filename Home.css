@@ -1,0 +1,511 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+body
+{
+  font-family: arial;
+  overflow-x:hidden;
+  background-color:#113037;
+  color: white;
+  animation: berubah 2s;
+  animation-timeline: view();
+}
+
+@keyframes berubah{
+  0%{
+    background-color:#084130;
+  }
+  50%{
+    background-color: black;
+  }
+  100%{
+    background-color:#0f0841;
+  }
+    
+}
+
+nav
+{
+  width:100vh;
+  background-color:#308288;
+  padding-left: 5px;
+  position: fixed;
+  display: flex;
+  z-index: 999;
+}
+
+.nama-sekolah
+{
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 20px;
+}
+
+.logo-sekolah
+{
+  width:50px;
+  padding:10px 5px 10px 10px;
+  font-family: "Boldonse";
+}
+
+
+{
+  top:15px;
+}
+
+.awal{
+  overflow-x: hidden;
+  position: relative;
+  background-image: url('masuk.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding-bottom: 90%;
+  object-fit:cover;
+  background-attachment: fixed;
+  border-radius: 0px 0px 30px 30px;
+  
+}
+
+
+
+.sambutan
+{
+ font-size: 15px;
+ margin-top: 70%;
+ width:90%;
+ color: black;
+ text-align: justify;
+ font-weight: 200;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+  backdrop-filter: blur(2vh);
+  border-radius: 20px;
+  position: relative;
+  font-weight: 900;
+  text-align: center;
+  font-weight: 900;
+}
+
+.kegiatan
+{
+  position:relative;
+  display:flex;
+  gap:2rem;
+  margin-top:-120px;
+  align-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 320%);
+}
+
+
+
+.foto-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  z-index: 1;
+  animation: hilang;
+  margin-top: -90px;
+  animation: ngilang ;
+  animation-timeline: view(80px);
+}
+
+@keyframes ngilang{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+.foto-item {
+  margin: 5px;
+  text-align: center;
+}
+
+.foto-item img {
+  width: 50px;
+  object-fit: cover;
+  border-radius: 10px;
+  border:.5px black double;
+  box-shadow: 4px 5px 10px 2px black;
+  background-color: white;
+
+}
+
+.foto-item p {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.ngapain
+{
+  padding:20px;
+}
+.tujuan
+{
+  display: flex;
+  padding: 30px 0px;
+  gap: 1rem;
+}
+
+.goal
+{
+  font-style: italic;
+  font-weight: 100;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.awas
+{
+  padding: 20px;
+}
+
+.biar
+{
+  border-radius: 20px;
+  border: .5px black solid;
+ background:linear-gradient(10deg,rgb(30,111,86),rgb(31,30,111));
+  padding: 50px;
+  font-size: 20px;
+  font-weight: 200;
+  font-style: italic;
+  text-align: center;
+  transition: .5s ease-in-out;
+  box-shadow: 1px 0px 10px 1px white;
+  animation:bercahaya 3s infinite alternate ease-in-out;
+}
+
+@keyframes bercahaya{
+  0%{
+    box-shadow: 1px 0px 10px 1px white;
+  }
+  50%{
+    box-shadow: 1px 0px 10px 1px 
+#59061b;
+  }
+  75%{
+    box-shadow: 1px 0px 10px 1px 
+#b3b4e8;
+  }
+  100%{
+    box-shadow: 1px 0px 110px 1px #6b6f1e;
+  }
+}
+
+.biar:hover
+{
+  background-color:rgb(48,130,136);
+}
+
+.tujuan img
+{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-top:70px;
+}
+
+.tujuan p
+{
+  
+  border-left: .5px solid black;
+  padding-left: 20px;
+}
+
+.judul-lingkungan
+{
+  margin-top: 10%;
+ background-color: skyblue;
+ padding: 5%;
+ border-radius: 0px 25px 25px 0px;
+ margin-right: 12vh;
+ box-shadow: -2px 2px 11px 1px black;
+}
+
+.suruh
+{
+  font-weight:100;
+  margin-left:10px;
+  padding: 30px 0px;
+}
+
+  .main
+  {
+    padding:10px 10px 0px 10px;
+    display: flex;
+    overflow-x: scroll;
+    gap:5px;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .lingkungan-sekolah
+    {
+      width:400px;
+      scroll-snap-align: center;
+    }
+
+    
+    .nama-lingkungan
+    {
+     transform:translatey(-80px);
+     margin-left: 0px;
+     border-top: 1.5px solid white;
+     backdrop-filter: blur(3vh);
+     background-color: transparent;
+     padding: 10px 20px; 
+     border-radius:0px 0px 20px 20px;
+     
+    }
+
+    
+    .nama-lingkungan p:nth-child(2)
+    {
+      font-weight:400;
+      font-size:10px;
+      color:white;
+      
+    }
+
+.card 
+{
+  width:200px;
+  height: 320px;
+  position: relative;
+    transition: .5s;
+    overflow: hidden;
+}
+
+img
+{
+  border-radius: 20px;
+
+}
+
+.info
+{
+  position: absolute;
+  transition: .5s ease-in-out ;
+   bottom:0;
+   padding:20px;
+   transform: translatey(109%);
+   color:white;
+  
+}
+
+.pengakuan
+{
+  font-weight: 100;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.bungkus-misi
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:4rem;
+  margin-bottom: 20px;
+  margin-top: -30px;
+  scroll-snap-type: y mandatory;
+}
+
+.misi
+{
+  scroll-snap-align: center;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 70px;
+  font-family: "orbitron", system-ui;
+  color:white;
+  animation: misi-blur linear both;
+  animation-timeline: view();
+}
+
+@keyframes misi-blur{
+  0%{
+    filter: blur(40px);
+  }
+  40%, 60%{
+    filter: blur(0px);
+  }
+  100%{
+    filter: blur(40px);
+  }
+}
+
+.bungkus-misi div:nth-child(1)
+  {
+  margin-left: 100px;
+  font-weight: 700;
+}
+.bungkus-misi div:nth-child(2)
+{
+  margin-left: -100px;
+}
+.bungkus-misi div:nth-child(3)
+{
+  margin-left: -50px;
+  font-weight: 900;
+}
+.bungkus-misi div:nth-child(4)
+{
+  margin-left: 100px;
+}
+
+
+.bungkus-menu
+{
+  padding:20px;
+  box-shadow: inset 0px 0px 20px 1px white;
+  border-radius: 20px;
+}
+
+.menu
+{
+  font-weight: 900;
+  font-size: 12px;
+  font-family: "Bungee", sans-serif;
+  font-weight: 200;
+  border: .5px solid #065957;
+  box-shadow: 0px 0px 10px 1px black;
+  background-color: #065957 ;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.top
+{
+  padding-bottom: 20px;
+}
+
+.atas
+{
+  width: 270px;
+  padding:10px 0px;
+  background-color: white;
+  border:.4px black solid;
+  box-shadow: 4px 10px 7px 1px skyblue;
+  border-radius: 30px 0px 30px 0px;
+}
+
+.mapel
+{
+  display: flex;
+  justify-content: space-around;
+}
+
+.pelajaran
+{
+  width: 100px;
+  object-fit: cover;
+  box-shadow: 4px 10px 7px 1px grey;
+  padding-top: 20px;
+  border-radius:0px 0px 33px 33px;
+}
+
+.ajar
+{
+  text-align: center;
+}
+
+.mapel figure
+{
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.mapel figcaption
+{
+  font-weight: bold;
+}
+
+
+figcaption center {
+  
+  font-family: "Playwrite HU", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 300;
+  color: white;
+}
+
+.informatika
+{
+  font-family: "orbitron", system-ui;
+  font-weight: 900;
+  color:white;
+}
+
+.awal-sampul
+{
+  padding: 20px;
+}
+
+.sampul
+{
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px 3px black;
+  background-color:#475e66;
+  flex-wrap: wrap;
+  padding-top:20px;
+  padding-bottom:20px;
+  box-shadow: 0px 0px 10px 1px white;
+}
+
+.layer-0
+{
+  padding: 20px;
+}
+
+.layer-1
+{
+  padding:20px;
+  border: 2px solid black;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: inset 0px 0px 15px 2px white;
+}
+
+.layer-2
+{
+  border-radius: 20px;
+  border: 2px solid #afbbbd;
+  padding: 10px 10px 20px 10px;
+  
+}
+
+.guru
+{
+  width: 150px;
+}
+
+.nama-guru
+{
+  font-weight: 900;
+}
+
+.jabatan
+{
+  font-weight: 100;
+  font-style: itallc;
+  padding: 10px 0px;
+}
